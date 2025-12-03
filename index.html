@@ -1,1 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaming Leaderboard System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Gaming Leaderboard</h1>
+
+  <div class="form-container">
+    <input type="text" id="playerName" placeholder="Enter Player Name">
+    <input type="number" id="playerScore" placeholder="Enter Score">
+    <button onclick="addPlayer()">Add / Update</button>
+  </div>
+
+  <input type="text" id="searchInput" placeholder="Search Player" onkeyup="searchPlayer()">
+
+  <table id="leaderboardTable">
+    <thead>
+      <tr>
+        <th>Rank</th>
+        <th>Player Name</th>
+        <th>Score</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="tableBody">
+      <!-- Data comes from JS -->
+    </tbody>
+  </table>
+
+  <button id="resetBtn" onclick="resetData()">Reset Leaderboard</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
